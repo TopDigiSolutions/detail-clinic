@@ -1,0 +1,16 @@
+﻿import { chromium } from '@playwright/test';
+const browser = await chromium.launch({ args: ['--enable-unsafe-swiftshader'] });
+const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
+page.on('pageerror', e => console.log('ERROR', e.message));
+page.on('console', m => { if (m.type() === 'error') console.log('CONSOLE', m.text()) });
+await page.goto('http://localhost:3000');
+await page.locator('#tint .tint-stage').scrollIntoViewIfNeeded();
+await page.locator('#tint .vehicle-render[data-status="ready"]').waitFor({ timeout: 90000 });
+await page.getByRole('button', { name: '35%', exact: true }).click();
+await page.waitForTimeout(400);
+await page.locator('#tint .tint-stage').screenshot({ path: 'docs/screenshots/tint-fixed-35.png' });
+await page.getByRole('button', { name: '70%', exact: true }).click();
+await page.waitForTimeout(400);
+await page.locator('#tint .tint-stage').screenshot({ path: 'docs/screenshots/tint-fixed-70.png' });
+console.log(await page.evaluate(() => performance.getEntriesByType('resource').filter(r => r.name.includes('.glb')).map(r => ({ url: r.name, duration: r.duration }))));
+await browser.close();
