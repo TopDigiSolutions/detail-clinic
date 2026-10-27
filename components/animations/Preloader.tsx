@@ -59,7 +59,7 @@ export function Preloader() {
             <svg className="preloader-wheel" viewBox="0 0 200 200" fill="none" aria-hidden="true">
               <defs>
                 <linearGradient id="loader-alloy" x1="40" y1="25" x2="160" y2="180" gradientUnits="userSpaceOnUse">
-                  <stop stopColor="#f3e8d1" /><stop offset=".42" stopColor="#c8b58f" /><stop offset=".7" stopColor="#6d6049" /><stop offset="1" stopColor="#e1d2b4" />
+                  <stop stopColor="#f8f9fa" /><stop offset=".42" stopColor="#d1d5db" /><stop offset=".7" stopColor="#6b7280" /><stop offset="1" stopColor="#e5e7eb" />
                 </linearGradient>
                 <radialGradient id="loader-tire">
                   <stop offset=".72" stopColor="#252627" /><stop offset=".84" stopColor="#111213" /><stop offset=".94" stopColor="#282a2b" /><stop offset="1" stopColor="#151617" />
@@ -70,21 +70,21 @@ export function Preloader() {
               <circle cx="100" cy="100" r="71" fill="#111213" stroke="url(#loader-alloy)" strokeWidth="4" />
               <circle cx="100" cy="100" r="55" fill="#262729" stroke="#414244" />
               <circle cx="100" cy="100" r="44" stroke="#77736a" strokeWidth="10" strokeDasharray="1 7" />
-              <path d="M146 70 Q158 100 146 130 L135 125 Q144 100 135 75Z" fill="#c8b58f" />
+              <path d="M146 70 Q158 100 146 130 L135 125 Q144 100 135 75Z" fill="#ED1B2E" />
               <g className="preloader-wheel-spin">
                 <circle cx="100" cy="100" r="91" stroke="#606163" strokeWidth="2" strokeDasharray="1 14" opacity=".4" />
                 {[0, 72, 144, 216, 288].map((angle) => (
                   <g key={angle} transform={`rotate(${angle} 100 100)`}>
-                    <path d="M94 91 76 35 84 32 101 80 116 32 124 35 106 91Z" fill="url(#loader-alloy)" stroke="#e9dcc1" strokeWidth=".5" />
+                    <path d="M94 91 76 35 84 32 101 80 116 32 124 35 106 91Z" fill="url(#loader-alloy)" stroke="#e5e7eb" strokeWidth=".5" />
                   </g>
                 ))}
                 <circle cx="100" cy="100" r="19" fill="#222324" stroke="url(#loader-alloy)" strokeWidth="2" />
                 {[0, 72, 144, 216, 288].map((angle) => (
-                  <circle key={angle} cx="100" cy="86" r="2" fill="#c8b58f" transform={`rotate(${angle} 100 100)`} />
+                  <circle key={angle} cx="100" cy="86" r="2" fill="#ED1B2E" transform={`rotate(${angle} 100 100)`} />
                 ))}
               </g>
               <circle cx="100" cy="100" r="9" fill="#121314" />
-              <text x="100" y="103" textAnchor="middle" fill="#c8b58f" fontSize="8" fontFamily="Arial, sans-serif" fontWeight="700" fontStyle="italic">DC</text>
+              <text x="100" y="103" textAnchor="middle" fill="#ED1B2E" fontSize="8" fontFamily="Arial, sans-serif" fontWeight="700" fontStyle="italic">DC</text>
               <path d="M35 58 A77 77 0 0 1 136 32" stroke="#fff" strokeOpacity=".18" strokeLinecap="round" />
             </svg>
             <div className="preloader-road"><span /></div>

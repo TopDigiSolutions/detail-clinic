@@ -1,11 +1,13 @@
 :root {
-  --accent: #d9c39c;
-  --color-accent: #d9c39c;
-  --brand-champagne: #d9c39c;
-  --bronze-dark: #caa879;
+  --accent: #ED1B2E;
+  --color-accent: #ED1B2E;
+  --brand-champagne: #ED1B2E;
+  --bronze-dark: #D01423;
+  --brand-red: #ED1B2E;
+  --brand-red-hover: #D01423;
 }
 
-/* Light studio theme: white, brushed silver, and restrained brand bronze. */
+/* Professional automotive studio theme: precision red, pure white, and high-contrast carbon charcoal. */
 h2,
 h3 {
   font-family: var(--font-body), Arial, sans-serif;
@@ -28,7 +30,7 @@ h3 {
   font-style: normal;
   font-weight: 500;
   letter-spacing: -0.045em;
-  color: #d9c39c;
+  color: #ED1B2E;
 }
 
 .section {
@@ -39,11 +41,11 @@ h3 {
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.15em;
-  color: #d9c39c;
+  color: #ED1B2E;
 }
 
 .eyebrow>span {
-  background: #d9c39c;
+  background: #ED1B2E;
 }
 
 .section-heading {
@@ -64,38 +66,42 @@ h3 {
 }
 
 .button {
-  background: #d9c39c;
-  border: 1px solid #d9c39c;
-  color: #20262b;
+  background: #ED1B2E;
+  border: 1px solid #ED1B2E;
+  color: #ffffff;
   min-height: 50px;
   border-radius: 7px;
   letter-spacing: 0.065em;
+  font-weight: 700;
   padding: 15px 23px;
-  box-shadow: 0 3px 8px #20262b08;
+  box-shadow: 0 4px 14px rgba(237, 27, 46, 0.28);
   transition:
     background 0.25s,
     transform 0.25s,
     color 0.25s,
-    border-color 0.25s;
+    border-color 0.25s,
+    box-shadow 0.25s;
 }
 
 .button:hover {
-  background: #e8d8bd;
-  border-color: #e8d8bd;
-  color: #20262b;
+  background: #D01423;
+  border-color: #D01423;
+  color: #ffffff;
+  box-shadow: 0 6px 20px rgba(237, 27, 46, 0.38);
 }
 
 .button-outline {
   background: transparent;
-  color: #d9c39c;
-  border: 1px solid #d9c39c;
+  color: #ED1B2E;
+  border: 1.5px solid #ED1B2E;
   box-shadow: none;
 }
 
 .button-outline:hover {
-  background: #d9c39c;
-  border-color: #d9c39c;
-  color: #20262b;
+  background: #ED1B2E;
+  border-color: #ED1B2E;
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(237, 27, 46, 0.24);
 }
 
 .header,
@@ -158,11 +164,11 @@ h3 {
 
 .desktop-nav a[aria-current="location"],
 .desktop-nav a[aria-current="page"] {
-  color: #d9c39c;
+  color: #ffffff;
 }
 
 .desktop-nav a::after {
-  background: #d9c39c;
+  background: #ED1B2E;
 }
 
 .header-call {
@@ -192,14 +198,14 @@ h3 {
 .mobile-menu nav a[aria-current="location"],
 .mobile-menu nav a[aria-current="page"] {
   background: #ffffff09;
-  color: #d9c39c;
-  box-shadow: inset 3px 0 #d9c39c;
+  color: #ED1B2E;
+  box-shadow: inset 3px 0 #ED1B2E;
 }
 
 .header .logo-symbol,
 .mobile-menu .logo-symbol,
 .mobile-menu nav small {
-  color: #d9c39c;
+  color: #ED1B2E;
 }
 
 .header .header-call,
@@ -210,39 +216,41 @@ h3 {
 
 .header .header-call svg,
 .mobile-menu .header-call svg {
-  color: #d9c39c;
+  color: #ED1B2E;
 }
 
 .header .header-call:hover,
 .mobile-menu .header-call:hover {
-  background: #ffffff0c;
-  border-color: #d9c39c;
+  background: rgba(237, 27, 46, 0.08);
+  border-color: #ED1B2E;
 }
 
 .header-book,
 .mobile-menu .button {
-  background: #d9c39c;
-  border-color: #d9c39c;
-  color: #20262b;
+  background: #ED1B2E;
+  border-color: #ED1B2E;
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(237, 27, 46, 0.28);
 }
 
 .header-book:hover,
 .mobile-menu .button:hover {
-  background: #e8d8bd;
-  border-color: #e8d8bd;
-  color: #20262b;
+  background: #D01423;
+  border-color: #D01423;
+  color: #ffffff;
+  box-shadow: 0 6px 20px rgba(237, 27, 46, 0.38);
 }
 
 .mobile-menu .button-outline {
   background: transparent;
-  color: #d9c39c;
-  border-color: #d9c39c;
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.35);
 }
 
 .mobile-menu .button-outline:hover {
-  background: #d9c39c;
-  border-color: #d9c39c;
-  color: #20262b;
+  background: #ED1B2E;
+  border-color: #ED1B2E;
+  color: #ffffff;
 }
 
 .header .menu-toggle {
@@ -252,14 +260,14 @@ h3 {
 }
 
 .header .menu-current {
-  color: #d9c39c;
+  color: #ED1B2E;
 }
 
 .header a:focus-visible,
 .header button:focus-visible,
 .mobile-menu a:focus-visible,
 .mobile-menu button:focus-visible {
-  outline-color: #d9c39c;
+  outline-color: #ED1B2E;
 }
 
 .mobile-book {
@@ -336,18 +344,18 @@ h3 {
 }
 
 .hero .outline-text {
-  color: #d9c39c;
+  color: #ED1B2E;
   -webkit-text-stroke: 0;
   text-shadow: 0 2px 16px rgba(0, 0, 0, 0.55);
 }
 
 .hero-content .eyebrow {
-  color: #d9c39c;
+  color: #ED1B2E;
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
 }
 
 .hero-content .eyebrow span {
-  background: #d9c39c;
+  background: #ED1B2E;
 }
 
 .hero-description {
@@ -377,8 +385,8 @@ h3 {
 }
 
 .hero .text-link:hover {
-  color: #d9c39c;
-  border-color: #d9c39c;
+  color: #ED1B2E;
+  border-color: #ED1B2E;
 }
 
 .hero-side {
@@ -420,7 +428,7 @@ h3 {
 
 .hero-photo-label>span {
   font-size: 9px;
-  color: #f0dfc5;
+  color: #ED1B2E;
   letter-spacing: 0.18em;
 }
 
@@ -493,8 +501,8 @@ h3 {
 }
 
 .service-card:hover {
-  border-color: #d9c39c80;
-  box-shadow: 0 14px 35px #20262b0b;
+  border-color: rgba(237, 27, 46, 0.35);
+  box-shadow: 0 14px 35px rgba(237, 27, 46, 0.08);
 }
 
 .service-photo {
@@ -544,24 +552,24 @@ h3 {
 }
 
 .showcase-tabs button:hover {
-  color: #d9c39c;
+  color: #ED1B2E;
 }
 
 .showcase-tabs button[aria-selected="true"] {
-  color: #d9c39c;
-  border-bottom-color: #d9c39c;
+  color: #ED1B2E;
+  border-bottom-color: #ED1B2E;
 }
 
 .showcase-caption .button {
-  background: #d9c39c;
-  border-color: #d9c39c;
-  color: #20262b;
+  background: #ED1B2E;
+  border-color: #ED1B2E;
+  color: #ffffff;
 }
 
 .showcase-caption .button:hover {
-  background: #e8d8bd;
-  border-color: #e8d8bd;
-  color: #20262b;
+  background: #D01423;
+  border-color: #D01423;
+  color: #ffffff;
 }
 
 .showcase-visual {
@@ -581,7 +589,7 @@ h3 {
 }
 
 .film h2 .serif {
-  color: #dfc8a3;
+  color: #ED1B2E;
 }
 
 .tint {
@@ -593,9 +601,10 @@ h3 {
 }
 
 .tint-options button[aria-pressed="true"] {
-  border-color: #d9c39c;
-  color: #d9c39c;
+  border-color: #ED1B2E;
+  color: #ED1B2E;
   font-weight: 700;
+  background: rgba(237, 27, 46, 0.06);
 }
 
 .process {
@@ -665,8 +674,8 @@ h3 {
 
 .package.featured {
   background: var(--surface);
-  border: 1px solid #d9c39c;
-  box-shadow: 0 8px 28px #20262b08;
+  border: 1.5px solid #ED1B2E;
+  box-shadow: 0 10px 32px rgba(237, 27, 46, 0.12);
 }
 
 .package .eyebrow {
@@ -796,16 +805,16 @@ h3 {
 
 .final-cta-line.serif {
   font-size: 0.95em;
-  color: #d9c39c;
+  color: #ED1B2E;
   line-height: 1.2;
 }
 
 .final-cta .eyebrow {
-  color: #d9c39c;
+  color: #ED1B2E;
 }
 
 .final-cta .eyebrow>span {
-  background: #d9c39c;
+  background: #ED1B2E;
 }
 
 .final-cta-bottom p {
@@ -813,27 +822,30 @@ h3 {
 }
 
 .final-cta .button {
-  background: #d9c39c;
-  border-color: #d9c39c;
-  color: #20262b;
+  background: #ED1B2E;
+  border-color: #ED1B2E;
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(237, 27, 46, 0.28);
 }
 
 .final-cta .button:hover {
-  background: #e8d8bd;
-  border-color: #e8d8bd;
-  color: #20262b;
+  background: #D01423;
+  border-color: #D01423;
+  color: #ffffff;
+  box-shadow: 0 6px 20px rgba(237, 27, 46, 0.38);
 }
 
 .final-cta .button-outline {
   background: transparent;
-  color: #d9c39c;
-  border-color: #d9c39c;
+  color: #ED1B2E;
+  border: 1.5px solid #ED1B2E;
 }
 
 .final-cta .button-outline:hover {
-  background: #d9c39c;
-  border-color: #d9c39c;
-  color: #20262b;
+  background: #ED1B2E;
+  border-color: #ED1B2E;
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(237, 27, 46, 0.24);
 }
 
 .final-photo-caption {
@@ -853,7 +865,7 @@ h3 {
   color: var(--brand-ivory);
   --text: var(--brand-ivory);
   --muted: #d0d3d5;
-  --accent: var(--brand-champagne);
+  --accent: #ED1B2E;
   --line: #ffffff24;
 }
 
@@ -862,12 +874,13 @@ h3 {
 }
 
 .footer a:focus-visible {
-  outline-color: var(--brand-champagne);
+  outline-color: #ED1B2E;
 }
 
 .footer-icons a:hover {
-  background: #ffffff0c;
-  color: var(--brand-champagne);
+  background: rgba(237, 27, 46, 0.12);
+  color: #ED1B2E;
+  border-color: #ED1B2E;
 }
 
 .footer-main>div>p,
@@ -946,7 +959,7 @@ h3 {
     border-radius: 8px;
     border: 1px solid #ffffff30;
     background: #ffffff08;
-    color: #d9c39c;
+    color: #ED1B2E;
     flex-shrink: 0;
   }
 
@@ -1428,7 +1441,7 @@ h3 {
 .transform-badge span {
   font-size: 9px;
   letter-spacing: 0.16em;
-  color: var(--champagne);
+  color: #ED1B2E;
   font-weight: 700;
   display: block;
 }
